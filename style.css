@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(#f2f2f2, #ddd);
+}
+
+#clock {
+  font-size: larger;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  border: 3px solid rgb(3, 58, 3);
+}
+
+.max-width {
+  max-width: 500px;
+}
+
+@keyframes slide-in {
+  0% {
+    border: 20px solid rgb(18, 167, 85);
+  }
+  100% {
+    border: 2px solid rgb(3, 46, 12);
+  }
+}
